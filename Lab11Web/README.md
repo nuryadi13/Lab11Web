@@ -15,7 +15,7 @@ Berikut beberapa ekstensi yang perlu diaktifkan:
 Untuk mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian
 Apache klik Config -> PHP.ini
 
-![img1!](/lab11web/praktikum11/foto1.png)
+![img1!](lab11web/praktikum11/foto1.png)
 
 ### Instalasi Codeigniter 4
 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara
