@@ -20,7 +20,7 @@ Berikut beberapa ekstensi yang perlu diaktifkan:
 Untuk mengaktifkan ekstentsi tersebut, melalu XAMPP Control Panel, pada bagian
 Apache klik Config -> PHP.ini
 
-![img1!](spraktikum11/foto1.png)
+![img1!](praktikum11/foto1.png)
 
 ## 1. Buat file baru dengan nama header.php
 ### Instalasi Codeigniter 4
