@@ -22,11 +22,9 @@ Apache klik Config -> PHP.ini
 
 ![img1!](praktikum11/foto1.png)
 
-## 1. Buat file baru dengan nama header.php
-### Instalasi Codeigniter 4
-Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara
-manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara
-manual
+Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan
+diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
+![img1!](praktikum11/foto2.png)
 
 • Unduh Codeigniter dari website https://codeigniter.com/download
 
@@ -36,306 +34,216 @@ manual
 
 • Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/
 
-![img1!](assets/img/1/11.png)
+![img1!](praktikum11/foto3.png)
 
-## 2. Menjalankan CLI (Command Line Interface)
+## Menjalankan CLI (Command Line Interface)
 Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk
 mengakses CLI buka terminal/command prompt.
 
-![img1!](assets/img/2/1.png)
+![img1!](praktikum11/foto4.png)
+Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah:
 
-## 3. Mengaktifkan Mode Debugging
+php spark
+
+![img1!](praktikum11/foto5.png)
+
+## Mengaktifkan Mode Debugging
+
 Codeigniter 4 menyediakan fitur debugging untuk memudahkan developer untuk
 mengetahui pesan error apabila terjadi kesalahan dalam membuat kode program.
+Secara default fitur ini belum aktif. Ketika terjadi error pada aplikasi akan ditampilkan
+pesan kesalahan seperti berikut.
 
-![img1!](assets/img/3/1.png)
+![img1!](praktikum11/foto6.png)
+
+Semua jenis error akan ditampilkan sama. Untuk memudahkan mengetahui jenis errornya, maka perlu diaktifkan mode debugging dengan mengubah nilai konfigurasi pada environment variable CI_ENVIRONMENT menjadi development
+
+![img1!](praktikum11/foto7.png)
 
 Ubah nama file env menjadi .env kemudian buka file tersebut dan ubah nilai variable
 CI_ENVIRINMENT menjadi development.
 
-## 4. Membuat Route Baru.
+![img1!](praktikum11/foto8.png)
+
+Gambar  di atas merupakan contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file app/Controller/home.php
+
+![img1!](praktikum11/foto9.png)
+
+## Struktur Direktori
+
+Untuk lebih memahami Framework Codeigniter 4 perlu mengetahui struktur direktori
+dan file yang ada. Buka pada Windows Explorer atau dari Visual Studio Code ->
+Open Folder.
+Terdapat beberapa direktori dan file yang perlu dipahami fungsi dan kegunaannya.
+
+• .github folder ini kita butuhkan untuk konfigurasi repo github, seperti konfigurasi
+untuk build dengan github action;
+
+• app folder ini akan berisi kode dari aplikasi yang kita kembangkan;
+
+• public folder ini berisi file yang bisa diakses oleh publik, seperti file index.php,
+robots.txt, favicon.ico, ads.txt, dll;
+
+• tests folder ini berisi kode untuk melakukan testing dengna PHPunit;
+vendor folder ini berisi library yang dibutuhkan oleh aplikasi, isinya juga termasuk
+kode core dari system CI.
+
+• writable folder ini berisi file yang ditulis oleh aplikasi. Nantinya, kita bisa pakai
+untuk menyimpan file yang di-upload, logs, session, dll.
+Sedangkan file-file yang berada pada root direktori CI sebagai berikut.
+
+• .env adalah file yang berisi variabel environment yang dibutuhkan oleh aplikasi.
+
+• .gitignore adalah file yang berisi daftar nama file dan folder yang akan diabaikan
+oleh Git.
+
+• build adalah script untuk mengubah versi codeigniter yang digunakan. Ada versi
+release (stabil) dan development (labil).
+
+• composer.json adalah file JSON yang berisi informasi tentang proyek dan daftar
+library yang dibutuhkannya. File ini digunakan oleh Composer sebagai acuan.
+
+• composer.lock adalah file yang berisi informasi versi dari libraray yang digunakan
+aplikasi.
+
+• license.txt adalah file yang berisi penjelasan tentang lisensi Codeigniter;
+
+• phpunit.xml.dist adalah file XML yang berisi konfigurasi untuk PHPunit.
+
+• README.md adalah file keterangan tentang codebase CI. Ini biasanya akan
+dibutuhkan pada repo github atau gitlab.
+
+• spark adalah program atau script yang berfungsi untuk menjalankan server,
+generate kode, dll.
+
+![img1!](praktikum11/foto10.png)
+
+Fokus kita pada folder app, dimana folder tersebut adalah area kerja kita untuk
+membuat aplikasi. Dan folder public untuk menyimpan aset web seperti css, gambar,
+javascript, dll.
+Memahami Konsep MVC
+Codeigniter menggunakan konsep MVC. MVC meripakan singkatan dari
+Model-View-Controller. MVC merupakan konsep arsitektur yang umum digunakan
+dalam pengembangan aplikasi. Konsep MVC adalah memisahkan kode program
+berdasarkan logic proses, data, dan tampilan. Untuk logic proses diletakkan pada
+direktori Contoller, Objek data diletakkan pada direktori Model, dan desain tampilan
+diletakkan pada direktori View.
+Codeigniter menggunakan konsep pemrograman berorientasi objek dalam
+mengimplementasikan konsep MVC.
+Model merupakan kode program yang berisi pemodelan data. Data dapat berupa
+database ataupun sumber lainnya.
+View merupakan kode program yang berisi bagian yang menangani terkait tampilan
+user interface sebuah aplikasi. didalam aplikasi web biasanya pasti akan berhubungan
+dengan html dan css.
+Controller merupakaan kode program yang berkaitan dengan logic proses yang
+menghubungkan antara view dan model. Controller berfungsi untuk menerima request
+dan data dari user kemudian diproses dengan menghubungkan bagian model dan view.
+Routing dan Controller
+Routing merupakan proses yang mengatur arah atau rute dari request untuk menentukan
+fungsi/bagian mana yang akan memproses request tersebut. Pada framework CI4,
+routing bertujuan untuk menentukan Controller mana yang harus merespon sebuah
+request. Controller adalah class atau script yang bertanggung jawab merespon sebuah
+request.
+Pada Codeigniter, request yang diterima oleh file index.php akan diarahkan ke Router
+untuk meudian oleh router tesebut diarahkan ke Controller.
+Router terletak pada file app/config/Routes.php
+
+![img1!](praktikum11/foto11.png)
+
+Pada file tersebut kita dapat mendefinisikan route untuk aplikasi yang kita buat.
+Contoh :
+
+|$routes->get('/', 'Home::index');|
+
+Kode tersebut akan mengarahkan rute untuk halaman home.
+
+## Membuat Route Baru.
+
 Tambahkan kode berikut di dalam Routes.php
 
-![img1!](assets/img/4/1.png)
+![img1!](praktikum11/foto12.png)
 
-Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
+Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan
+perintah berikut
 
-![img1!](assets/img/4/2.png)
+![img1!](praktikum11/foto13.png)
+
+Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url
+http://localhost:8080/about
+
+![img1!](praktikum11/foto14.png)
 
 Ketika diakses akan mucul tampilan error 404 file not found, itu artinya file/page
 tersebut tidak ada. Untuk dapat mengakses halaman tersebut, harus dibuat terlebih
 dahulu Contoller yang sesuai dengan routing yang dibuat yaitu Contoller Page.
-
-## 5. Membuat Controller
+Membuat Controller
 Selanjutnya adalah membuat Controller Page. Buat file baru dengan nama page.php
 pada direktori Controller kemudian isi kodenya seperti berikut.
 
-![img1!](assets/img/5/1.png)
+![img1!](praktikum11/foto15.png)
 
-Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaitu halaman
+Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaotu halaman
 sudah dapat diakses.
 
-![img1!](assets/img/5/2.png)
+![img1!](praktikum11/foto16.png)
 
-## 6. Auto Routing
+## Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status
 autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai true
 menjadi false.
-
-![img1!](assets/img/5/3.png)
-
+|$routes->setAutoRoute(true);|
 Tambahkan method baru pada Controller Page seperti berikut.
 
-![img1!](assets/img/5/4.png)
+![img1!](praktikum11/foto17.png)
 
-Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
+Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan
+alamat: http://localhost:8080/page/tos
 
-![img1!](assets/img/5/5.png)
+![img1!](praktikum11/foto18.png)
 
-## 7. Membuat View
+## Membuat View
+
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file
 baru dengan nama about.php pada direktori view (app/view/about.php) kemudian isi
 kodenya seperti berikut.
 
-![img1!](assets/img/6/1.png)
+![img1!](praktikum11/foto19.png)
 
 Ubah method about pada class Controller Page menjadi seperti berikut:
 
-![img1!](assets/img/6/2.png)
+![img1!](praktikum11/foto20.png)
 
 Kemudian lakukan refresh pada halaman tersebut.
 
-![img1!](assets/img/6/3.png)
+![img1!](praktikum11/foto21.png)
 
-## 8. Membuat Layout Web dengan CSS
+## Membuat Layout Web dengan CSS
+
+Pada dasarnya layout web dengan css dapat diimplamentasikan dengan mudah pada
+codeigniter. Yang perlu diketahui adalah, pada Codeigniter 4 file yang menyimpan asset
+css dan javascript terletak pada direktori public.
 Buat file css pada direktori public dengan nama style.css (copy file dari praktikum
 lab4_layout. Kita akan gunakan layout yang pernah dibuat pada praktikum 4.
 
-![img1!](assets/img/7/1.png)
+![img1!](praktikum11/foto22.png)
 
 Kemudian buat folder template pada direktori view kemudian buat file header.php dan
 footer.php
+File app/view/template/header.php
 
-![img1!](assets/img/7/22.png)
+![img1!](praktikum11/foto23.png)
 
 File app/view/template/footer.php
 
-![img1!](assets/img/7/3.png)
+![img1!](praktikum11/foto24.png)
 
 Kemudian ubah file app/view/about.php seperti berikut.
 
-![img1!](assets/img/7/4.png)
+![img1!](praktikum11/foto25.png)
 
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
+Selanjutnya refresh browser untuk melihat hasilnya
 
-![img1!](assets/img/7/5.png)
+![img1!](praktikum11/foto26.png)
 
-# Lab 11 (Lanjutan)
 
-## 1. Membuat Database: Studi Kasus Data Artikel
-
-![img1!](assets/img/11/1.png)
-
-## 2. Konfigurasi koneksi database
-Selanjutnya membuat konfigurasi untuk menghubungkan dengan database server.
-
-![img1!](assets/img/11/2.png)
-
-## 3. Membuat Model
-Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pada direktori app/Models dengan nama ArtikelModel.php
-
-![img1!](assets/img/11/3.png)
-
-## 4. Membuat Controller
-Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers.
-
-![img1!](assets/img/11/4.png)
-
-## 5. Membuat View
-Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat file baru dengan nama index.php.
-
-![img1!](assets/img/11/5.png)
-
-Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
-
-![img1!](assets/img/11/6.png)
-
-Belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database agar dapat ditampilkan datanya.
-
-![img1!](assets/img/11/7.png)
-
-Refresh kembali browser, sehingga akan ditampilkan hasilnya.
-
-![img1!](assets/img/11/8.png)
-
-## 6. Membuat Tampilan Detail Artikel
-Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view().
-
-![img1!](assets/img/11/9.png)
-
-## 7. Membuat View Detail
-Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
-
-![img1!](assets/img/11/10.png)
-
-## Membuat Routing untuk artikel detail
-Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
-
-![img1!](assets/img/11/11.png)
-
-![img1!](assets/img/11/12.png)
-
-## 8. Membuat Menu Admin
-Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada
-Controller Artikel dengan nama admin_index(). 
-
-![img1!](assets/img/11/13.png)
-
-Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
-
-![img1!](assets/img/11/14.png)
-
-Tambahkan routing untuk menu admin seperti berikut:
-
-![img1!](assets/img/11/15.png)
-
-Akses menu admin dengan url http://localhost:8080/admin/artikel
-
-![img1!](assets/img/11/16.png)
-
-## 9. Menambah Data Artikel
-Tambahkan fungsi/method baru pada Controller Artikel dengan nama add(). 
-
-![img1!](assets/img/11/17.png)
-
-Kemudian buat view untuk form tambah dengan nama form_add.php
-
-![img1!](assets/img/11/18.png)
-
-![img1!](assets/img/11/19.png)
-
-## 10. Mengubah Data
-Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit(). 
-
-![img1!](assets/img/11/20.png)
-
-Kemudian buat view untuk form tambah dengan nama form_edit.php
-
-![img1!](assets/img/11/21.png)
-
-![img1!](assets/img/11/22.png)
-
-## 11. Menghapus Data
-Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
-
-![img1!](assets/img/11/23.png)
-
-
-# Lab 11 Framework Lanjutan (Modul Login)
-
-## 1. Membuat Tabel User
-
-![img1!](assets/img/12/1.png)
-
-## 2. Membuat Model User
-Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php
-
-![img1!](assets/img/12/2.png)
-
-## 3. Membuat Controller User
-Buat Controller baru dengan nama User.php pada direktori app/Controllers.
-Kemudian tambahkan method index() untuk menampilkan daftar user, dan method
-login() untuk proses login.
-
-![img1!](assets/img/12/3.png)
-
-## 4. Membuat View Login
-Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file
-baru dengan nama login.php.
-
-![img1!](assets/img/12/44.png)
-
-## 5. Membuat Database Seeder
-Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul
-login, kita perlu memasukkan data user dan password kedaalam database.
-
-![img1!](assets/img/12/5.png)
-
-Uji Coba Login, Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
-
-![img1!](assets/img/12/6.png)
-
-## 6. Menambahkan Auth Filter
-Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php
-pada direktori app/Filters.
-
-![img1!](assets/img/12/7.png)
-
-Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
-
-![img1!](assets/img/12/8.png)
-
-Selanjutnya buka file app/Config/Routes.php dan sesuaikan kodenya.
-
-![img1!](assets/img/12/9.png)
-
-## 7. Percobaan Akses Menu Admin
-Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut
-diakses maka, akan dimuculkan halaman login.
-
-![img1!](assets/img/12/10.png)
-
-## 8. Fungsi Logout
-Tambahkan method logout pada Controller User seperti berikut:
-
-![img1!](assets/img/12/11.png)
-
-# Lab 11 Pagination dan Pencarian
-
-## 1. Membuat Pagination
-Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi
-kode pada method admin_index seperti berikut.
-
-![img1!](assets/img/13/1.png)
-
-Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data.
-
-![img1!](assets/img/13/2.png)
-
-Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
-
-![img1!](assets/img/13/3.png)
-
-## 2. Membuat Pencarian
-Pencarian data digunakan untuk memfilter data.
-
-![img1!](assets/img/13/4.png)
-
-Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut:
-
-![img1!](assets/img/13/5.png)
-
-Dan pada link pager ubah seperti berikut.
-
-![img1!](assets/img/13/6.png)
-
-Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
-
-![img1!](assets/img/13/7.png)
-
-## 3. Upload Gambar
-Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel, sesuaikan kode pada method add seperti berikut:
-
-![img1!](assets/img/13/8.png)
-
-Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti berikut.
-
-![img1!](assets/img/13/9.png)
-
-Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
-
-![img1!](assets/img/13/10.png)
-
-Ujicoba file upload dengan mengakses menu tambah artikel.
-
-![img1!](assets/img/13/11.png)
