@@ -260,15 +260,15 @@ melalui XAMPP.
 
 Membuat database
 
-![img1!](/Lab11Web/praktikum12/foto01.png)
+![img1!](/praktikum12/foto01.png)
 
 # Membuat Tabel
 
-![img1!](/Lab11Web/praktikum12/foto02.png)
+![img1!](/praktikum12/foto02.png)
 
 # struktur tabel
 
-![img1!](/Lab11Web/praktikum12/foto03.png)
+![img1!](/praktikum12/foto03.png)
 
 # Konfigurasi koneksi database
 
@@ -278,7 +278,7 @@ Konfigurasi dapat dilakukan dengan du acara, yaitu pada file app/config/database
 
 atau menggunakan file .env. Pada praktikum ini kita gunakan konfigurasi pada file .env.
 
-![img1!](/Lab11Web/praktikum12/foto04.png)
+![img1!](/praktikum12/foto04.png)
 
 # Membuat Model
 
@@ -286,13 +286,13 @@ Selanjutnya adalah membuat Model untuk memproses data Artikel. Buat file baru pa
 
 direktori app/Models dengan nama ArtikelModel.php
 
-![img1!](/Lab11Web/praktikum12/foto05.png)
+![img1!](/praktikum12/foto05.png)
 
 # Membuat Controller
 
 Buat Controller baru dengan nama Artikel.php pada direktori app/Controllers.
 
-![img1!](/Lab11Web/praktikum12/foto06.png)
+![img1!](/praktikum12/foto06.png)
 
 # Membuat View
 
@@ -300,21 +300,21 @@ Buat direktori baru dengan nama artikel pada direktori app/views, kemudian buat 
 
 baru dengan nama index.php.
 
-![img1!](/Lab11Web/praktikum12/foto07.png)
+![img1!](/praktikum12/foto07.png)
 
  Selanjutnya buka browser kembali, dengan mengakses url http://localhost:8080/artikel
 
-![img1!](/Lab11Web/praktikum12/foto08.png)
+![img1!](/praktikum12/foto08.png)
 
 # Belum ada data yang diampilkan. Kemudian coba tambahkan beberapa data pada database agar dapat ditampilkan datanya.
 
 Menambahkan data
 
-![img1!](/Lab11Web/praktikum12/foto09.png)
+![img1!](/praktikum12/foto09.png)
 
 Refresh kembali browser, sehingga akan ditampilkan hasilnya.
 
-![img1!](/Lab11Web/praktikum12/foto10.png)
+![img1!](/praktikum12/foto10.png)
 
 # Membuat Tampilan Detail Artikel
 
@@ -322,23 +322,23 @@ Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berb
 
 Tambahkan fungsi baru pada Controller Artikel dengan nama view().
 
-![img1!](/Lab11Web/praktikum12/foto11.png)
+![img1!](/praktikum12/foto11.png)
 
 # Membuat View Detail
 
 Buat view baru untuk halaman detail dengan nama app/views/artikel/detail.php.
 
-![img1!](/Lab11Web/praktikum12/foto12.png)
+![img1!](/praktikum12/foto12.png)
 
 # Membuat Routing untuk artikel detail
 
 Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artikel detail.
 
-![img1!](/Lab11Web/praktikum12/foto13.png)
+![img1!](/praktikum12/foto13.png)
 
 selanjutnya refresh dan lihat hasilnya
 
-![img1!](/Lab11Web/praktikum12/foto14.png)
+![img1!](/praktikum12/foto14.png)
 
 # Membuat Menu Admin
 
@@ -346,19 +346,19 @@ Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada
 
 Controller Artikel dengan nama admin_index().
 
-![img1!](/Lab11Web/praktikum12/foto15.png)
+![img1!](/praktikum12/foto15.png)
 
 # Selanjutnya buat view untuk tampilan admin dengan nama admin_index.php
 
-![img1!](/Lab11Web/praktikum12/foto16.png)
+![img1!](/praktikum12/foto16.png)
 
 # Tambahkan routing untuk menu admin seperti berikut:
 
-![img1!](/Lab11Web/praktikum12/foto17.png)
+![img1!](/praktikum12/foto17.png)
 
 Akses menu admin dengan url http://localhost:8080/admin/artikel
 
-![img1!](/Lab11Web/praktikum12/foto18.png)
+![img1!](/praktikum12/foto18.png)
 
 # Menambah Data Artikel
 
@@ -366,33 +366,33 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
 
 Kemudian buat view untuk form tambah dengan nama form_add.php
 
-![img1!](/Lab11Web/praktikum12/foto19.png)
+![img1!](/praktikum12/foto19.png)
 
 # Kemudian buat view untuk form tambah dengan nama form_add.php
 
-![img1!](/Lab11Web/praktikum12/foto20.png)
+![img1!](/praktikum12/foto20.png)
 
 Selanjutnya jalankan pada browser
 
-![img1!](/Lab11Web/praktikum12/foto21.png)
+![img1!](/praktikum12/foto21.png)
 
 # Kemudian buat view untuk form tambah dengan nama form_edit.php
 
-![img1!](/Lab11Web/praktikum12/foto22.png)
+![img1!](/praktikum12/foto22.png)
 
 # Kemudian buat view untuk form tambah dengan nama form_edit.php
 
-![img1!](/Lab11Web/praktikum12/foto23.png)
+![img1!](/praktikum12/foto23.png)
 
 Kemudian lihat hasilnya pada beowser
 
-![img1!](/Lab11Web/praktikum12/foto24.png)
+![img1!](/praktikum12/foto24.png)
 
 # Menghapus Data
 
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
 
-![img1!](/Lab11Web/praktikum12/foto25.png)
+![img1!](/praktikum12/foto25.png)
 
 
 
