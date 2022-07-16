@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
+<title>Sistem Informasi Akademik</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="description" content="Sistem Informasi Akademik Ecampus"/>
+<meta name="author" content="Mohammad Fauzi Murtadho"/>
+
+<link rel="stylesheet" type="text/css" href="/pb/zkau/web/227573bc/_zkiju-breeze/zul/css/zk.wcs"/>
+<link rel="stylesheet" type="text/css" href="/pb/zkau/web/227573bc/zss/css/ssmoz.css.dsp"/>
+<link rel="stylesheet" type="text/css" href="/pb/css/my9.css"/>
+<link rel="stylesheet" type="text/css" href="/pb/css/fgrid.css"/>
+
+<script type="text/javascript" src="/pb/zkau/web/227573bc/js/zk.wpd" charset="UTF-8">
+</script>
+<script type="text/javascript" src="/pb/zkau/web/227573bc/js/zul.lang.wpd" charset="UTF-8">
+</script>
+<!-- ZK 5.0.13 EE 2011053114 Evaluation Only -->
+<script type="text/javascript">
+     	function resizeIframe(obj) {
+		    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+		}
+     
+		const popupCenter = ({url, title, w, h}) => {
+		    // Fixes dual-screen position                             Most browsers      Firefox
+		    const dualScreenLeft = window.screenLeft !==  undefined ? window.screenLeft : window.screenX;
+		    const dualScreenTop = window.screenTop !==  undefined   ? window.screenTop  : window.screenY;
+		
+		    const width = window.innerWidth ? window.innerWidth : document.documentElement.clientWidth ? document.documentElement.clientWidth : screen.width;
+		    const height = window.innerHeight ? window.innerHeight : document.documentElement.clientHeight ? document.documentElement.clientHeight : screen.height;
+		
+		    const systemZoom = width / window.screen.availWidth;
+		    const left = (width - w) / 2 / systemZoom + dualScreenLeft
+		    const top = (height - h) / 2 / systemZoom + dualScreenTop
+		    const newWindow = window.open(url, title, 
+		      `
+		      scrollbars=no,
+		      width=${w / systemZoom}, 
+		      height=${h / systemZoom}, 
+		      top=${top}, 
+		      left=${left}
+		      `
+		    )
+		
+		    if (window.focus) newWindow.focus();
+		}
+		
+		
+		
+		
+		
+	 </script>
+<link rel="shortcut icon" href="/pb/img/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div id="pL7Q_" class="z-temp"><script src='/pb/zkau/web/227573bc/js/zul.breeze.wpd'></script></div>
+<script class="z-runonce" type="text/javascript">zkmx(
+[0,'pL7Q_',{dt:'z_lik',cu:'/pb',uu:'/pb/zkau',ru:'/pages/main/sub_main.zul'},[
+['zul.wnd.Window','pL7Q0',{$$onMinimize:false,$$onZIndex:false,$$onMove:false,$onClose:true,$$onOpen:false,$$onMaximize:false,$$onSize:false,width:'100%',height:'100%',prolog:'\n\n\n\t'},[
+['zul.wgt.Popup','pL7Q1',{id:'popupmenu',visible:false,$$onOpen:false,width:'330px',height:'99%',style:'border:0px;',prolog:'\n\n\n\n\t\t'},[
+['zul.layout.Borderlayout','pL7Q2',{width:'100%',height:'100%',style:'border:0px;',prolog:'\n\n\n\n\n\t\t\t'},[
+['zul.layout.East','pL7Q3',{$$onOpen:false,$$onSize:false,width:'25px',style:'border:0px;'},[
+['zul.wgt.Toolbarbutton','pL7Q4',{$onClick:true,image:'/pb/img/delete.gif'},[]]]],
+['zul.layout.North','pL7Q5',{$$onOpen:false,$$onSize:false,height:'90px',style:'border:0px;'},[
+['zul.grid.Grid','pL7Q6',{$$onDataLoading:true,$$onInnerWidth:false,$$onRender:true,$$onScrollPos:false,$$onPageSize:true,width:'100%',style:'border:0px;',_topPad:0,emptyMessage:null,_totalSize:1,_offset:0},[
+['zul.grid.Columns','pL7Q7',{$$onColSize:false},[
+['zul.grid.Column','pL7Q8',{$onSort:true,$onGroup:true,valign:'bottom',align:'left'},[]]]],
+['zul.grid.Rows','pL7Q9',{_offset:0,visibleItemCount:1},[
+['zul.grid.Row','pL7Qa',{style:'border:0px;'},[
+['zul.box.Box','pL7Qb',{pack:'end'},[
+['zul.wgt.A','pL7Qc',{$onClick:true,href:'#'},[
+['zul.box.Box','pL7Qd',{align:'end',pack:'end'},[
+['zul.wgt.Image','pL7Qe',{id:'foto',height:'80px',src:'https://ecampus.pelitabangsa.ac.id/pb/AmbilMedia?d=9hKXKM4AxU9v66p4%2BTx0Dto3egxBQBN4xxHcUDtYU2Z18OBAkXinSZQMNne4B1t4Ooorj1VSN6aHrt6c2cuTKPw0XW7s%2FNFEZt0bsvkBRp8CGcPBvZ4Tnz3g7RjExECzqNLddh7yAQUuk10%2BVT7jvhTZ2z%2FmC0qDkYFUMmJNDCmDCXwaItGZJPs9xhpQZK82AJ1tJgxW%2BdV8DYoKlBON8Q%3D%3D'},[]],
+['zul.wgt.Label','pL7Qf',{id:'loginInformation',style:'color:blue;',value:'NURYADI 312010621 (Mahasiswa), Teknik Informatika '},[]]],'horizontal']]]],'vertical']]]]]]]]],
+['zul.layout.Center','pL7Qg',{$$onOpen:false,$$onSize:false,style:'border:0px;',flex:true},[
+['zul.sel.Tree','pL7Qh',{id:'menubar',$$onAnchorPos:false,$$onSelect:false,$$onInnerWidth:false,$$onScrollPos:false,$$onPageSize:true,width:'100%',height:'100%',style:'border-color:#EEEEEE;border:0px;',zclass:'z-dottree',rows:200},[
+['zul.sel.Treechildren','pL7Q41',{},[
+['zul.sel.Treeitem','pL7Q51',{$onClick:true,$$onOpen:false,open:false},[
+['zul.sel.Treerow','pL7Q61',{},[
+['zul.sel.Treecell','pL7Q71',{label:'Pengaturan Pengguna',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Q81',{},[
+['zul.sel.Treeitem','pL7Q91',{$onClick:true,open:false,value:'rubah_password'},[
+['zul.sel.Treerow','pL7Qa1',{},[
+['zul.sel.Treecell','pL7Qb1',{label:'Ubah Password',image:'/pb/img/lock-icon.png.png'},[]]]]]]]]]],
+['zul.sel.Treeitem','pL7Qc1',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Qd1',{},[
+['zul.sel.Treecell','pL7Qe1',{label:'Kolom Mahasiswa',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Qf1',{},[
+['zul.sel.Treeitem','pL7Qg1',{$onClick:true,open:false,value:'/pages/master/pertemuan.zul'},[
+['zul.sel.Treerow','pL7Qh1',{},[
+['zul.sel.Treecell','pL7Qi1',{label:'Aktifitas Perkuliahan',image:'/pb/img/notebook-boy-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qj1',{$onClick:true,open:false,value:'/pages/master/absensi_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qk1',{},[
+['zul.sel.Treecell','pL7Ql1',{label:'Status Kehadiran',image:'/pb/img/notebook-boy-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qm1',{$onClick:true,open:false,value:'/pages/master/nilai_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qn1',{},[
+['zul.sel.Treecell','pL7Qo1',{label:'Penilaian',image:'/pb/img/Mimetypes-x-office-address-book-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qp1',{$onClick:true,open:false,value:'/pages/master/krs.zul'},[
+['zul.sel.Treerow','pL7Qq1',{},[
+['zul.sel.Treecell','pL7Qr1',{label:'Isi KRS',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qs1',{$onClick:true,open:false,value:'/pages/master/kalender_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qt1',{},[
+['zul.sel.Treecell','pL7Qu1',{label:'Kalender Perkuliahan',image:'/pb/img/Actions-view-calendar-month-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qv1',{$onClick:true,open:false,value:'/pages/master/kurikulum.zul'},[
+['zul.sel.Treerow','pL7Qw1',{},[
+['zul.sel.Treecell','pL7Qx1',{label:'Kurikulum Perkuliahan',image:'/pb/img/Library-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qy1',{$onClick:true,open:false,value:'/pages/master/mahasiswa_request_tugas_akhir.zul'},[
+['zul.sel.Treerow','pL7Qz1',{},[
+['zul.sel.Treecell','pL7Q_2',{label:'Pengajuan Skripsi',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q02',{$onClick:true,open:false,value:'/pages/master/kkn/kkn_utk_mhs.zul'},[
+['zul.sel.Treerow','pL7Q12',{},[
+['zul.sel.Treecell','pL7Q22',{label:'Pengajuan KKN',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q32',{$onClick:true,open:false,value:'/pages/master/beasiswa/beasiswa_utk_mhs.zul'},[
+['zul.sel.Treerow','pL7Q42',{},[
+['zul.sel.Treecell','pL7Q52',{label:'Pengajuan Beasiswa',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q62',{$onClick:true,open:false,value:'/pages/master/pkl/pkl_utk_mhs.zul'},[
+['zul.sel.Treerow','pL7Q72',{},[
+['zul.sel.Treecell','pL7Q82',{label:'Pengajuan PKL',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q92',{$onClick:true,open:false,value:'/pages/master/pendaftaran_cuti_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qa2',{},[
+['zul.sel.Treecell','pL7Qb2',{label:'Pengajuan Cuti',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qc2',{$onClick:true,open:false,value:'/pages/master/pengajuan_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qd2',{},[
+['zul.sel.Treecell','pL7Qe2',{label:'Pengajuan Lain',image:'/pb/img/Document-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qf2',{$onClick:true,open:false,value:'/pages/master/mahasiswa_request_tugas_akhir.zul'},[
+['zul.sel.Treerow','pL7Qg2',{},[
+['zul.sel.Treecell','pL7Qh2',{label:'Pengajuan dan Bimbingan Skripsi',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qi2',{$onClick:true,open:false,value:'/pages/master/skripsi.zul'},[
+['zul.sel.Treerow','pL7Qj2',{},[
+['zul.sel.Treecell','pL7Qk2',{label:'Sidang dan Revisi Skripsi',image:'/pb/img/none-icon.png.png'},[]]]]]]]]]],
+['zul.sel.Treeitem','pL7Ql2',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Qm2',{},[
+['zul.sel.Treecell','pL7Qn2',{label:'Proses Kelulusan dan Wisuda',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Qo2',{},[
+['zul.sel.Treeitem','pL7Qp2',{$onClick:true,open:false,value:'generateNoKursi'},[
+['zul.sel.Treerow','pL7Qq2',{},[
+['zul.sel.Treecell','pL7Qr2',{label:'Generate nomor kursi',image:'/pb/img/chair-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qs2',{$onClick:true,open:false,value:'/pages/master/pendaftaran_wisuda_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qt2',{},[
+['zul.sel.Treecell','pL7Qu2',{label:'Daftar Wisuda',image:'/pb/img/Actions-list-add-user-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qv2',{$onClick:true,open:false,value:'daftar_sidang_atau_munaqosah'},[
+['zul.sel.Treerow','pL7Qw2',{},[
+['zul.sel.Treecell','pL7Qx2',{label:'Pengajuan Sidang Skripsi/Tugas Akhir',image:'/pb/img/Books-2-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qy2',{$onClick:true,open:false,value:'cetakUndanganWisuda'},[
+['zul.sel.Treerow','pL7Qz2',{},[
+['zul.sel.Treecell','pL7Q_3',{label:'Cetak Undangan Wisuda',image:'/pb/img/print-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q03',{$onClick:true,open:false,value:'laporanRegistrasiWisuda'},[
+['zul.sel.Treerow','pL7Q13',{},[
+['zul.sel.Treecell','pL7Q23',{label:'No registrasi',image:'/pb/img/Actions-view-process-system-icon.png.png'},[]]]]]]]]]],
+['zul.sel.Treeitem','pL7Q33',{$onClick:true,open:false,value:'/pages/master/informasi_pembayaran_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Q43',{},[
+['zul.sel.Treecell','pL7Q53',{label:'Informasi Pembayaran Mahasiswa',image:'/pb/img/Pay-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q63',{$onClick:true,open:false,value:'/pages/master/informasi_kunjungan_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Q73',{},[
+['zul.sel.Treecell','pL7Q83',{label:'Informasi Kunjungan Mahasiswa',image:'/pb/img/Apps-preferences-system-login-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Q93',{$onClick:true,open:false,value:'/pages/master/biodata_mahasiswa.zul'},[
+['zul.sel.Treerow','pL7Qa3',{},[
+['zul.sel.Treecell','pL7Qb3',{label:'Biodata Mahasiswa',image:'/pb/img/User-Preppy-Red-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qc3',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Qd3',{},[
+['zul.sel.Treecell','pL7Qe3',{label:'Laporan',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Qf3',{},[
+['zul.sel.Treeitem','pL7Qg3',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Qh3',{},[
+['zul.sel.Treecell','pL7Qi3',{label:'Akademik',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Qj3',{},[
+['zul.sel.Treeitem','pL7Qk3',{$onClick:true,open:false,value:'laporanTranskripAkademik'},[
+['zul.sel.Treerow','pL7Ql3',{},[
+['zul.sel.Treecell','pL7Qm3',{label:'Laporan Transkrip Akademik',image:'/pb/img/Windows-Table-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qn3',{$onClick:true,open:false,value:'laporanKHS'},[
+['zul.sel.Treerow','pL7Qo3',{},[
+['zul.sel.Treecell','pL7Qp3',{label:'Laporan Kartu Hasil Studi',image:'/pb/img/product-sales-report-icon.png.png'},[]]]]]],
+['zul.sel.Treeitem','pL7Qq3',{$onClick:true,open:false,value:'ais.action.report.format1.akademik.LaporanPendidikanLingkunganKampus'},[
+['zul.sel.Treerow','pL7Qr3',{},[
+['zul.sel.Treecell','pL7Qs3',{label:'Formulir Kegiatan',image:'/pb/img/reports-icon.png.png'},[]]]]]]]]]]]]]],
+['zul.sel.Treeitem','pL7Qt3',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Qu3',{},[
+['zul.sel.Treecell','pL7Qv3',{label:'Kolom Perpustakaan',image:'/pb/img/dir.gif'},[]]]],
+['zul.sel.Treechildren','pL7Qw3',{},[
+['zul.sel.Treeitem','pL7Qx3',{$onClick:true,open:false,value:'/pages/master/library/item.zul'},[
+['zul.sel.Treerow','pL7Qy3',{},[
+['zul.sel.Treecell','pL7Qz3',{label:'Katalog Perpustakaan',image:'/pb/img/Actions-view-calendar-timeline-icon.png.png'},[]]]]]]]]]],
+['zul.sel.Treeitem','pL7Q_4',{$onClick:true,open:false,value:'bantuan'},[
+['zul.sel.Treerow','pL7Q04',{},[
+['zul.sel.Treecell','pL7Q14',{label:'Bantuan',image:'/pb/img/help.gif'},[]]]]]],
+['zul.sel.Treeitem','pL7Q24',{$onClick:true,open:false},[
+['zul.sel.Treerow','pL7Q34',{},[
+['zul.sel.Treecell','pL7Q44',{label:'Keluar Aplikasi',image:'/pb/img/shutdown.PNG'},[]]]]]]]]]]]]]]]],
+['zul.layout.Borderlayout','pL7Qi',{id:'myborder',width:'100%',height:'100%',prolog:'\n\n\t\t'},[
+['zul.layout.Center','pL7Qj',{style:'border:0px;',border:'none',flex:true},[
+['zul.grid.Grid','pL7Qk',{style:'border:0px;',_topPad:0,emptyMessage:null,_totalSize:2,_offset:0},[
+['zul.grid.Rows','pL7Ql',{_offset:0,visibleItemCount:2},[
+['zul.grid.Row','pL7Qm',{style:'border:0px;background: transparent;border-radius: 40px 15px;'},[
+['zul.box.Box','pL7Qn',{id:'headerHbox'},[
+['zul.grid.Grid','pL7Qo',{sclass:'fgrid',style:'border:0px;',_topPad:0,emptyMessage:null,_totalSize:1,_offset:0},[
+['zul.grid.Columns','pL7Qp',{},[
+['zul.grid.Column','pL7Qq',{$onSort:true,$onGroup:true},[]],
+['zul.grid.Column','pL7Qr',{$onSort:true,$onGroup:true,width:'30%'},[]]]],
+['zul.grid.Rows','pL7Qs',{_offset:0,visibleItemCount:1},[
+['zul.grid.Row','pL7Qt',{id:'rowHeader',style:'background:url(\'https://ecampus.pelitabangsa.ac.id/pb/img/banner_perguruanTinggi_1.jpg\') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;',valign:'middle'},[
+['zul.box.Box','pL7Qu',{},[
+['zul.wgt.Space','pL7Qv',{orient:'vertical'},[]],
+['zul.wgt.Image','pL7Qw',{id:'idLogo',height:'80px',src:'https://ecampus.pelitabangsa.ac.id/pb/img/logo_perguruanTinggi_1.png'},[]],
+['zul.wgt.Space','pL7Qx',{orient:'vertical'},[]],
+['zul.box.Box','pL7Qy',{},[
+['zul.wgt.Label','pL7Qz',{id:'title',style:'font-size: 28px;color:#010068;font-weight: bolder;font-family: \'Open Sans\', sans-serif;',value:'UNIVERSITAS PELITA BANGSA'},[]],
+['zul.wgt.Label','pL7Q_0',{id:'motto',style:'font-size: large;color:#bc0404;font-weight: bold;font-family: \'Open Sans\', sans-serif;',value:'Entrepreneur University'},[]],
+['zul.wgt.Label','pL7Q00',{id:'alamat',style:'font-size: 11px;color:#010068;font-weight: bold;font-family: \'Open Sans\', sans-serif',value:'Jl. Inspeksi Kalimalang Tegal Danas Arah Deltamas, Cibatu, Cikarang, Telp. 021  2851 8181,82,83,84, Email : info@pelitabangsa.ac.id'},[]]],'vertical']],'horizontal'],
+['zul.box.Box','pL7Q10',{width:'100%',style:'border:0px; font-weight:bold;font-size:9px;',align:'right',pack:'end'},[
+['zul.wgt.Space','pL7Q20',{orient:'vertical'},[]],
+['zul.box.Box','pL7Q30',{id:'headerHboxButton',width:'100%',style:'border:0px; font-weight:bold;font-size:9px;',align:'right',pack:'end'},[
+['zul.wgt.Toolbarbutton','pL7Qz0',{$onClick:true,image:'/pb/img/Help-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Q_1',{$onClick:true,image:'/pb/img/android-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Q01',{$onClick:true,image:'/pb/img/key-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Q11',{$onClick:true,image:'/pb/img/Profile-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Q21',{$onClick:true,image:'/pb/img/Mobile-Tablet-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Q31',{$onClick:true,image:'/pb/img/shutdown-icon.png'},[]]],'horizontal'],
+['zul.wgt.Toolbarbutton','pL7Q40',{id:'usersOnline',$onClick:true,style:'color:#3366ff;font-size:9px',label:'Online user(s): 0',href:'#'},[]]],'vertical']]]]]]]],'horizontal']]],
+['zul.grid.Row','pL7Q50',{style:'border:0px;background: transparent;'},[
+['zul.tab.Tabbox','pL7Q60',{id:'iframe',$onClick:true,width:'100%',height:'150000px',style:'border:0px;'},[
+['zul.tab.Tabs','pL7Q70',{id:'tabs'},[
+['zul.tab.Tab','pL7Q80',{$onClose:true,$$onSelect:false,$onSelect:false,label:'Home',image:'/pb/img/blue-home-icon.png',selected:true},[]],
+['zul.tab.Tab','pL7Q90',{id:'tabpengumuman',visible:false,$onClick:true,$onClose:true,$onSelect:false,label:'Pengumuman',image:'/pb/img/options-icon.png'},[]],
+['zul.tab.Tab','pL7Qa0',{$onClick:true,$onClose:true,$onSelect:false,label:'e-Learning',image:'/pb/img/options-icon.png'},[]],
+['zul.tab.Tab','pL7Qb0',{$onClick:true,$onClose:true,$onSelect:false,label:'Prestasi',image:'/pb/img/Scheduled-Tasks-icon.png'},[]],
+['zul.tab.Tab','pL7Qc0',{$onClick:true,$onClose:true,$onSelect:false,label:'Pustaka',image:'/pb/img/Books-icon1.png'},[]],
+['zul.tab.Tab','pL7Qd0',{$onClick:true,$onClose:true,$onSelect:false,label:'Dashboard',image:'/pb/img/Dashboard-icon.png'},[]],
+['zul.tab.Tab','pL7Qe0',{$onClick:true,$onClose:true,$onSelect:false,label:'Info Kalender Akademik',image:'/pb/img/Apps-Calendar-Metro-icon.png',closable:true},[]],
+['zul.tab.Tab','pL7Qf0',{$onClick:true,$onClose:true,$onSelect:false,label:'Info Kegiatan',image:'/pb/img/Status-dialog-information-icon.png',closable:true},[]]]],
+['zul.tab.Tabpanels','pL7Qg0',{id:'tabpanels'},[
+['zul.tab.Tabpanel','pL7Qh0',{id:'panel_home',style:'border:0px;'},[
+['zul.wgt.Include','pL7Qy0',{},[
+['zul.wnd.Window','pL7Qh4',{id:'window',$onClose:true,width:'100%',height:'100%',prolog:'\n\n\n\n\t',contentStyle:'overflow:auto'},[
+['zul.layout.Borderlayout','pL7Qi4',{id:'utamaLagi',style:'border:0px;',prolog:'\n\n\t\t'},[
+['zul.layout.Center','pL7Qj4',{style:'border:0px;',border:'none',flex:true},[
+['zul.layout.Borderlayout','pL7Qk4',{id:'utama',style:'border:0px;'},[
+['zul.layout.Center','pL7Ql4',{style:'border:0px;',border:'none',flex:true},[
+['zul.tab.Tabbox','pL7Qm4',{width:'100%',height:'100%'},[
+['zul.tab.Tabs','pL7Qn4',{id:'tabspeng'},[]],
+['zul.tab.Tabpanels','pL7Qo4',{id:'tabpanelspeng'},[]]]]]],
+['zul.layout.South','pL7Qp4',{$$onOpen:false,$$onSize:false,border:'none'},[
+['zul.mesh.Paging','pL7Qq4',{id:'paging',visible:false,$$onPaging:false,detailed:true},[]]]],
+['zul.layout.East','pL7Qr4',{id:'menuPintas',width:'310px',border:'none'},[
+['zul.wgt.Include','pL7Qyd',{width:'100%',height:'100%'},[
+['zul.wnd.Window','pL7Q1e',{$onClose:true,width:'100%',height:'100%',style:'background-color: #FFFFFF;',prolog:'\n\t'},[
+['zul.layout.Borderlayout','pL7Q2e',{style:'border:0px;',prolog:'\n\n\t\t'},[
+['zul.layout.Center','pL7Q3e',{id:'center',style:'border:0px;',border:'none',flex:true},[
+['zul.box.Box','pL7Q4e',{width:'100%'},[
+['zul.wgt.Label','pL7Q5e',{value:'Harap tunggu, sedang mengambil data ...'},[]],
+['zul.wgt.Image','pL7Q6e',{width:'90%',src:'/pb/loading_icon.gif'},[]]],'vertical']]]]]]]]]]],
+['zul.layout.West','pL7Qu4',{$$onOpen:false,$$onSize:false,width:'250px'},[
+['zul.layout.Borderlayout','pL7Qv4',{},[
+['zul.layout.North','pL7Qw4',{height:'25px',border:'none'},[
+['zul.layout.Borderlayout','pL7Qx4',{},[
+['zul.layout.West','pL7Qy4',{width:'80%',border:'none'},[
+['zul.inp.Textbox','pL7Qz4',{$$onError:false,$$onChange:false,$onOK:true,width:'95%'},[]]]],
+['zul.layout.Center','pL7Q_5',{border:'none',flex:true},[
+['zul.wgt.Toolbarbutton','pL7Q05',{$onClick:true,width:'95%',style:'font-size:11px;',image:'/pb/img/search.gif'},[]]]]]]]],
+['zul.layout.Center','pL7Q15',{border:'none',flex:true},[
+['zul.grid.Grid','pL7Q25',{width:'100%',height:'100%',_topPad:0,emptyMessage:null,_totalSize:163,_offset:0},[
+['zul.grid.Rows','pL7Q35',{_offset:0,visibleItemCount:163},[
+['zkex.grid.Group','pL7Q45',{$$onOpen:false},[
+['zul.wgt.Label','pL7Q55',{value:'Peraturan, Pedoman, dan SOP'},[]]]],
+['zul.grid.Row','pL7Q65',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q75',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Yudisium Mei 2022 Semester Genap TA 2021/2022  Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Q85',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q95',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Ujian Tengah Semester (UTS) Semester Genap TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qa5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qb5',{$onClick:true,style:'font-size: 10px;',label:'Yudisium Fakultas Ekonomi Dan Bisnis Semester Genap TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qc5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qd5',{$onClick:true,style:'font-size: 10px;',label:'Surat Edaran tentang Himbuan Pencegahan Penipuan'},[]]]],
+['zul.grid.Row','pL7Qe5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qf5',{$onClick:true,style:'font-size: 10px;',label:'Surat Edaran Terkait KRS KKN FEB, FIP-HUM, DAN FAI'},[]]]],
+['zul.grid.Row','pL7Qg5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qh5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang Pengisian Kuesioner Monitoring Perkuliahan Daring  Semester Genap Tahun Akademik 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qi5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qj5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP dan Skripsi Semester Genap TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qk5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Ql5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman UTS Semester Genap TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qm5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qn5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Hari Libur Awal Ramadhan dan Libur Hari Raya Idul Fitri 1443 H'},[]]]],
+['zul.grid.Row','pL7Qo5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qp5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Ujian Tengah Semester (UTS) Semester Genap TA. 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qq5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qr5',{$onClick:true,style:'font-size: 10px;',label:'Seminar Fakultas Ilmu Pendidikan dan Humaniora Universitas Pelita Bangsa tema " Peran Ilmu Pendidikan dan Humaniora dalam Membentuk Mahasiswa yang Berjiawa "MEGAH"'},[]]]],
+['zul.grid.Row','pL7Qs5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qt5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang E- Sertifikat Seminar Universitas Pelita Bangsa dengan Tema \u201cCreative Preneur 2.0\u201d '},[]]]],
+['zul.grid.Row','pL7Qu5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qv5',{$onClick:true,style:'font-size: 10px;',label:'Edaran KKN Angkatan 2019 FEB, FIPHUM, dan FAI'},[]]]],
+['zul.grid.Row','pL7Qw5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qx5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Wisuda ke IV Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qy5',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qz5',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Perpanjangan Pengisian KRS Semester Genap TA 2021-2022'},[]]]],
+['zul.grid.Row','pL7Q_6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q06',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pelaksanaan Wisuda ke IV UPB dan Pengambilan Ijazah'},[]]]],
+['zul.grid.Row','pL7Q16',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q26',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Perubahan Link Seminar Universitas Pelita Bangsa Creative Preneur 2.0'},[]]]],
+['zul.grid.Row','pL7Q36',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q46',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Perkuliahan Semester Genap TA. 2021/2022'},[]]]],
+['zul.grid.Row','pL7Q56',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q66',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PELAKSANAAN ACARA  YUDISIUM UNIVERSITAS PELITA BANGSA 27 FEBRUARI 2022'},[]]]],
+['zul.grid.Row','pL7Q76',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q86',{$onClick:true,style:'font-size: 10px;',label:'Pengumuma tentang Kartu Asuransi '},[]]]],
+['zul.grid.Row','pL7Q96',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qa6',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG SEMINAR WAWASAN KEBANGSAAN UNIVERSITAS PELITA BANGSA TAHUN AKADEMIK 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qb6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qc6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Seminar Universitas Pelita Bangsa Ta 2021-2022'},[]]]],
+['zul.grid.Row','pL7Qd6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qe6',{$onClick:true,style:'font-size: 10px;',label:'Surat Edaran tentang Pencegahan dan Penanganan Kekerasan Seksual di Lingkungan Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qf6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qg6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Yudisium Periode Bulan Februari 2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qh6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qi6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pengisian KRS Semester Genap TA. 2021/2022 Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qj6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qk6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Yudisium Fakultas Ekonomi dan Bisnis Februari 2022'},[]]]],
+['zul.grid.Row','pL7Ql6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qm6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Libur Pelayanan Kampus Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qn6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qo6',{$onClick:true,style:'font-size: 10px;',label:'Surat Pembukaan KKN Prodi Manajemen Angkatan 2018'},[]]]],
+['zul.grid.Row','pL7Qp6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qq6',{$onClick:true,style:'font-size: 10px;',label:'SYARAT PENGAMBILAN SURAT KETERANGAN BEBAS PERPUSTAKAAN'},[]]]],
+['zul.grid.Row','pL7Qr6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qs6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP dan Skripsi Semester Ganjil TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qt6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qu6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman PEMIRAMA Calon Ketua BEM Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qv6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qw6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Ujian Akhir Semester (UAS) Semester Ganjil TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qx6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qy6',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pelaksanaan Kelas Akselerasi/Percepatan  Semester Ganjil Ta. 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qz6',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q_7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Ujian Tengah Semester Susulan Bagi Mahasiswa Pengusul Beasiswa KIP Aspirasi Semester Ganjil Ta 2021-2022'},[]]]],
+['zul.grid.Row','pL7Q07',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q17',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Ujian Akhir Semester dan Ujian Akhir Semester Susulan Bagi Mahasiswa Pengusul Beasiswa KIP Aspirasi Semester Ganjil Ta 2021-2022'},[]]]],
+['zul.grid.Row','pL7Q27',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q37',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pendaftaran Calon Ketua dan Wakil Ketua BEM Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Q47',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q57',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Aktivitas Perkuliahan Terkait Hari Libur Nasional Tanggal 25 Desember 2021 dan 1 Januari 2022'},[]]]],
+['zul.grid.Row','pL7Q67',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q77',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman UAS dan UAS Susulan Semester Ganjil TA 2021/2022 Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Q87',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q97',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pendaftaran Panitia PEMIRAMA BEM Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qa7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qb7',{$onClick:true,style:'font-size: 10px;',label:'Kuisioner Pendapat Perkuliahan Offline/Tatap muka'},[]]]],
+['zul.grid.Row','pL7Qc7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qd7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN KKN 2020/2021'},[]]]],
+['zul.grid.Row','pL7Qe7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qf7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP dan Skripsi Semester Ganjil TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qg7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qh7',{$onClick:true,style:'font-size: 10px;',label:'Surat Edaran tentang Himbauan Pelaksanaan Mubes (Musyarawah Besar) Bagi Organisasi Kemahasiswaan (Ormawa) '},[]]]],
+['zul.grid.Row','pL7Qi7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qj7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Ujian Tengah Semester (UTS) Susulan Semester Ganjil TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qk7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Ql7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PELAKSANAAN WISUDA ke 3 UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qm7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qn7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG PERUBAHAN JADWAL PELAYANAN SAAT PELAKSANAAN WISUDA KE 3 UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qo7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qp7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN BATAS AKHIR KLAIM SPP PESERTA BANTUAN SPP/UKT  SEMESTER GASAL 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qq7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qr7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PELAKSANAAN UJIAN TENGAH SEMESTER (UTS) FAKULTAS EKONOMI DAN BISNIS'},[]]]],
+['zul.grid.Row','pL7Qs7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qt7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tata Cara Klaim Bantuan SPP UKT Semester Gasal TA 2021-2022'},[]]]],
+['zul.grid.Row','pL7Qu7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qv7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Yudisisium 02 November 2021 Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qw7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qx7',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman UTS Semester Ganjil TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qy7',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qz7',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG DATA ASURANSI TAHUN 2019/2020 & KTM YANG BELUM DI AMBIL'},[]]]],
+['zul.grid.Row','pL7Q_8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q08',{$onClick:true,style:'font-size: 10px;',label:'SYARAT PENGAMBILAN SURAT KETERANGAN BEBAS PERPUSTAKAAN '},[]]]],
+['zul.grid.Row','pL7Q18',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q28',{$onClick:true,style:'font-size: 10px;',label:'Penggunaan Aplikasi PeduliLindungi di Lingkungan Kampus'},[]]]],
+['zul.grid.Row','pL7Q38',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q48',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG UTS SEMESTER GANJIL TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Q58',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q68',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Yudisium November 2021 Semester Ganjil TA 2021/2022 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Q78',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q88',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG PENGAMBILAN IJAZAH DAN PELAKSANAAN WISUDA KE-III UPB'},[]]]],
+['zul.grid.Row','pL7Q98',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qa8',{$onClick:true,style:'font-size: 10px;',label:'MEKANISME PENGAMBILAN SERTIFIKAT DAN SOUVENIR TUGAS OPA OFFLINE FAKULTAS TEKNIK UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qb8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qc8',{$onClick:true,style:'font-size: 10px;',label:'REVISI PENGUMUMAN PENGAMBILAN SOUVENIR OPA - FATEK'},[]]]],
+['zul.grid.Row','pL7Qd8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qe8',{$onClick:true,style:'font-size: 10px;',label:'Revisi Pengumuman Gerai Vaksinasi Bekerjasama Dengan Polsek Cikarang Selatan'},[]]]],
+['zul.grid.Row','pL7Qf8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qg8',{$onClick:true,style:'font-size: 10px;',label:'Pelaksanaan Gerai Vaksinasi Bekerjasama Dengan Polsek Cikarang Selatan '},[]]]],
+['zul.grid.Row','pL7Qh8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qi8',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TUGAS OPA OFFLINE FAKULTAS TEKNIK UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qj8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qk8',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SURVEY PENDATAAN MAHASISWA YANG BELUM MELAKUKAN VAKSINASI'},[]]]],
+['zul.grid.Row','pL7Ql8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qm8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Orientasi Pengenalan Akademik (OPA) Ke 2 Tahun Akademik 2021/2022 Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qn8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qo8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Program Bantuan Spp/Ukt Semester Gasal Ta. 2021-2022 '},[]]]],
+['zul.grid.Row','pL7Qp8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qq8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Kalender Akademik Tahun Akademik 2021/2022 Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qr8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qs8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Persyaratan Administrasi Pengisian KRS Semester Ganjil Ta 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qt8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qu8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pengisian KRS Semester Ganjil Tahun Akademik 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qv8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qw8',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pendaftaran dan  Seleksi Hafiz Qur\'an 2021'},[]]]],
+['zul.grid.Row','pL7Qx8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qy8',{$onClick:true,style:'font-size: 10px;',label:'JADWAL SIDANG KP DAN SKRIPSI FAKULTAS TEKNIK SEMESTER GANJIL TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qz8',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q_9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang  Pelaksanaan Vaksin Dosis 2 Reschedule'},[]]]],
+['zul.grid.Row','pL7Q09',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q19',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Pendataan Alumni Universitas Pelita Bangsa Tahun 2021'},[]]]],
+['zul.grid.Row','pL7Q29',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q39',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang Penundaan Pelaksanaan Vaksinasi Dosis Ke-2 - UPB'},[]]]],
+['zul.grid.Row','pL7Q49',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q59',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Vaksinasi Dosis Ke-2 - UPB'},[]]]],
+['zul.grid.Row','pL7Q69',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q79',{$onClick:true,style:'font-size: 10px;',label:'Seminar Wajib untuk Mahasiswa ProdiTeknik Informatika Tahun Akademik 2020/2021 untuk mahasiswa angkatan 2017, 2018, 2019 dan 2020'},[]]]],
+['zul.grid.Row','pL7Q89',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q99',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TEKNIS ACARA YUDISIUM 22 AGUSTUS 2021'},[]]]],
+['zul.grid.Row','pL7Qa9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qb9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Vaksinasi SEMMI'},[]]]],
+['zul.grid.Row','pL7Qc9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qd9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN YUDISIUM FAKULTAS TEKNIK BULAN AGUSTUS TA 2020/2021'},[]]]],
+['zul.grid.Row','pL7Qe9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qf9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PERPANJANGAN PENDAFTARAN PERBAIKAN NILAI/REMEDIAL FATEK SEMESTER GENAP TA 2020/2021'},[]]]],
+['zul.grid.Row','pL7Qg9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qh9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TENTANG PEMBUATAN AKUN DAN ISI ANGKET PADA APLIKASI  SPADA INDONESIA'},[]]]],
+['zul.grid.Row','pL7Qi9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qj9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PERPANJANGAN PELAKSANAAN SIDANG KP DAN SKRIPSI FAKULTAS TEKNIK SEMESTER GENAP TA 2020/2021'},[]]]],
+['zul.grid.Row','pL7Qk9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Ql9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman_Perbaikan Nilai TA 2020-2021 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qm9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qn9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Teknis Pelaksanaan Vaksin Mahasiswa Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qo9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qp9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Relawan Vaksinasi Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qq9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qr9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Perubahan Jadwal Pelaksanaan Vaksin Universitas Pelita Bangsa'},[]]]],
+['zul.grid.Row','pL7Qs9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qt9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Survey Pendaftaran Vaksinasi Bagi Mahasiswa - UPB'},[]]]],
+['zul.grid.Row','pL7Qu9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qv9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN TUGAS OPA OFFLINE FAKULTAS TEKNIK UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qw9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qx9',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Upload Sertifikat Vaksin beserta Tutorial - UPB'},[]]]],
+['zul.grid.Row','pL7Qy9',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qz9',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PENDAFTARAN RELAWAN DAN PESERTA VAKSINASI MASAL'},[]]]],
+['zul.grid.Row','pL7Q_a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q0a',{$onClick:true,style:'font-size: 10px;',label:'SYARAT PENGAMBILAN SURAT KETERANGAN BEBAS PERPUSTAKAAN UNTUK YUDISIUM '},[]]]],
+['zul.grid.Row','pL7Q1a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q2a',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PELAKSANAAN ORIENTASI PENGENALAN AKADEMIK (OPA) TAHUN AKADEMIK 2021/2022 UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Q3a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q4a',{$onClick:true,style:'font-size: 10px;',label:'PENUMUMAN PENUNDAAN KKN '},[]]]],
+['zul.grid.Row','pL7Q5a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q6a',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pendaftaran Relawan Administrasi untuk Vaksinasi Masal'},[]]]],
+['zul.grid.Row','pL7Q7a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q8a',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP dan Skripsi Periode Juli - Agustus 2021 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Q9a',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qaa',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Ujian Akhir Semester (UAS) Semester Genap TA 2020/2021 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qba',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qca',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PENUTUPAN SEMENTARA SELURUH PELAYANAN LURING (OFFLINE) UNIVERSITAS PELITA BANGSA'},[]]]],
+['zul.grid.Row','pL7Qda',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qea',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SEMINAR PEMUDA PENGGERAK BANGSA 2021'},[]]]],
+['zul.grid.Row','pL7Qfa',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qga',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Ujian Akhir Semester (UAS) dan Ujian Akhir semester Susulan Genap Ta 2020-2021'},[]]]],
+['zul.grid.Row','pL7Qha',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qia',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sertifikat Seminar Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qja',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qka',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SEMINAR FEB-FIPHUM '},[]]]],
+['zul.grid.Row','pL7Qla',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qma',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KP dan Sidang Skripsi Gelombang 5 & 6. Semester Genap TA 2020/2021. Fakultas Teknik '},[]]]],
+['zul.grid.Row','pL7Qna',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qoa',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Yudisium Periode Mei 2021. Semester Genap TA 2020/2021. Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Qpa',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qqa',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan NUDC KDMI 2021'},[]]]],
+['zul.grid.Row','pL7Qra',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qsa',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan PILMAPRES 2021'},[]]]],
+['zul.grid.Row','pL7Qta',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qua',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang Perpanjangan Libur Pelayanan Kampus'},[]]]],
+['zul.grid.Row','pL7Qva',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qwa',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN YANG BELUM MENGAMBIL KARTU ASURANSI SEKALIGUS KTM ANGKATAN 2016 - 2019'},[]]]],
+['zul.grid.Row','pL7Qxa',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qya',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang Kontak Pelayanan Terkait Permintaan atau Pertanyaan Informasi Akademik'},[]]]],
+['zul.grid.Row','pL7Qza',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q_b',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tentang E- Sertifikat Seminar Universitas dengan Tema \u201cCreative Preneur\u201d'},[]]]],
+['zul.grid.Row','pL7Q0b',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q1b',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Penerima KIP SPP semester ganjil ta 2020-2021 yang belum menyelesaikan dokumen administrasi'},[]]]],
+['zul.grid.Row','pL7Q2b',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q3b',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Ujian Akhir Semester (UAS) TA 2020/2021 Fakultas Teknik'},[]]]],
+['zul.grid.Row','pL7Q4b',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q5b',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SEMINAR UNIVERSITAS TAHUN AKADEMIK 2020/2021'},[]]]],
+['zul.grid.Row','pL7Q6b',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q7b',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN KKN MAHASISWA ANGKATAN 2017 PRODI MANAJEMEN '},[]]]],
+['zul.grid.Row','pL7Q8b',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q9b',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Tata Cara Klaim  SPP Semester Ganjil TA 2020 2021 Bagi  Peserta KIP SPP 2020 Gelombang Tambahan'},[]]]],
+['zul.grid.Row','pL7Qab',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qbb',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang Skripsi Secara Daring Fakultas Teknik Bulan Oktober 2020'},[]]]],
+['zul.grid.Row','pL7Qcb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qdb',{$onClick:true,style:'font-size: 10px;',label:'PELAKSANAAN SIDANG KERJA PRAKTEK (KP) SECARA DARING'},[]]]],
+['zul.grid.Row','pL7Qeb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qfb',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN PELAKSANAAN SIDANG KERJA PRAKTEK (KP) SECARA DARING SEMESTER GENAP TA 2019/2020'},[]]]],
+['zul.grid.Row','pL7Qgb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qhb',{$onClick:true,style:'font-size: 10px;',label:'PERPANJANGAN WAKTU PENDAFTARAN SIDANG KERJA PRAKTEK (KP) SECARA DARING'},[]]]],
+['zul.grid.Row','pL7Qib',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qjb',{$onClick:true,style:'font-size: 10px;',label:'PERPANJANGAN WAKTU PENDAFTARAN SIDANG  SKRIPSI SECARA DARING'},[]]]],
+['zul.grid.Row','pL7Qkb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qlb',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang Kerja Praktek (KP)  Secara Daring TA 2019/2020 Fakultas Teknik Universitas Pelita Bangsa'},[]]]],
+['zkex.grid.Group','pL7Qmb',{},[
+['zul.wgt.Label','pL7Qnb',{value:'Tutorial'},[]]]],
+['zul.grid.Row','pL7Qob',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qpb',{$onClick:true,style:'font-size: 10px;',label:'Tutorial UTS online Mahasiswa '},[]]]],
+['zul.grid.Row','pL7Qqb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qrb',{$onClick:true,style:'font-size: 10px;',label:'Tutorial Cara Install Zoom Cloud Meeting di Smart Phone Android'},[]]]],
+['zul.grid.Row','pL7Qsb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qtb',{$onClick:true,style:'font-size: 10px;',label:'Cara dosen bisa live streaming via youtube'},[]]]],
+['zkex.grid.Group','pL7Qub',{},[
+['zul.wgt.Label','pL7Qvb',{value:'Informasi'},[]]]],
+['zul.grid.Row','pL7Qwb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qxb',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG KKP DAN SKRIPSI GEL II 16 APRIL 2022'},[]]]],
+['zul.grid.Row','pL7Qyb',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qzb',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG KKP DAN SKRIPSI GEL I 10 APRIL 2022'},[]]]],
+['zul.grid.Row','pL7Q_c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q0c',{$onClick:true,style:'font-size: 10px;',label:'SURAT EDARAN BIAYA YUDISIUM DAN WISUDA SEMESTER GANJIL TA 2021/2022'},[]]]],
+['zul.grid.Row','pL7Q1c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q2c',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA GEL X FEBRUARI 2022'},[]]]],
+['zul.grid.Row','pL7Q3c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q4c',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA GEL IX FEBRUARI 2022'},[]]]],
+['zul.grid.Row','pL7Q5c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q6c',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA GEL VIII FEBRUARI 2022'},[]]]],
+['zul.grid.Row','pL7Q7c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q8c',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA GEL VII JANUARI 2022'},[]]]],
+['zul.grid.Row','pL7Q9c',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qac',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA GEL VI JANUARI 2022'},[]]]],
+['zul.grid.Row','pL7Qbc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qcc',{$onClick:true,style:'font-size: 10px;',label:'Peserta Sidang Kerja Praktek Gelombang V,  Minggu 16 Januari 2022 , TA 2021/2022 Semester Gasal'},[]]]],
+['zul.grid.Row','pL7Qdc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qec',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DAN SKRIPSI PRODI TEKNIK INFORMATIKA  GEL V JANUARI 2022'},[]]]],
+['zul.grid.Row','pL7Qfc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qgc',{$onClick:true,style:'font-size: 10px;',label:'Peserta Sidang Skripsi Gelombang ke V Minggu 16 Januari 2022, TA 2021/2022 Semester Gasal untuk Yudisium Februari 2022'},[]]]],
+['zul.grid.Row','pL7Qhc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qic',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Sidang KKP dan Skripsi Gelombang IV: 09 Januari 2022 Untuk Yudisium Februari 2022'},[]]]],
+['zul.grid.Row','pL7Qjc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qkc',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Pelaksanaan Sidang KKP dan Skripsi Gelombang III: 02 Januari 2022 Untuk Yudisium Februari 2022'},[]]]],
+['zul.grid.Row','pL7Qlc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qmc',{$onClick:true,style:'font-size: 10px;',label:'Pelaksanaan Sidang Kerja Praktek, Skripsi 26 Desember 2021'},[]]]],
+['zul.grid.Row','pL7Qnc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qoc',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang Skripsi Gelombang VI Program Studi Teknik Informatika'},[]]]],
+['zul.grid.Row','pL7Qpc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qqc',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang Kerja Praktek Gelombang VI Prodi Teknik Informatika'},[]]]],
+['zul.grid.Row','pL7Qrc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qsc',{$onClick:true,style:'font-size: 10px;',label:'Konsultasi Prodi Teknik Informatika Dimasa Pandemi'},[]]]],
+['zul.grid.Row','pL7Qtc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Quc',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG KKP GEL VI JUNI 2021'},[]]]],
+['zul.grid.Row','pL7Qvc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qwc',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG SKRIPSI GELOMBANG III LANJUTAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Qxc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qyc',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP GELOMBANG III BULAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Qzc',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q_d',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG SKRIPSI GELOMBANG III BULAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Q0d',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q1d',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG SKRIPSI GELOMBANG II BULAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Q2d',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q3d',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP GELOMBANG II BULAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Q4d',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q5d',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP Gelombang I Bulan Agustus 2020'},[]]]],
+['zul.grid.Row','pL7Q6d',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q7d',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang SKRIPSI Gelombang I Bulan Agustus 2020'},[]]]],
+['zul.grid.Row','pL7Q8d',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Q9d',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN SIDANG KKP DARING BULAN AGUSTUS 2020'},[]]]],
+['zul.grid.Row','pL7Qad',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qbd',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Jadwal Sidang KKP Gelombang II Juli 2020 Prodi TI'},[]]]],
+['zul.grid.Row','pL7Qcd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qdd',{$onClick:true,style:'font-size: 10px;',label:'SEMESTER ANTARA ATAU SP UNTUK SEMUA ANGKATAN'},[]]]],
+['zul.grid.Row','pL7Qed',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qfd',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP Gelombang 1 Juli 2020'},[]]]],
+['zul.grid.Row','pL7Qgd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qhd',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG KKP PRODI TEKNIK INFORMATIKA GELOMBANG II'},[]]]],
+['zul.grid.Row','pL7Qid',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qjd',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG SKRIPSI PRODI TEKNIK INFORMATIKA GELOMBANG II'},[]]]],
+['zul.grid.Row','pL7Qkd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qld',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman Sidang KKP, Sabtu 09 Mei 2020'},[]]]],
+['zul.grid.Row','pL7Qmd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qnd',{$onClick:true,style:'font-size: 10px;',label:'DATA TAMBAHAN MAHASISWA KKN PRODI MANAJEMEN'},[]]]],
+['zkex.grid.Group','pL7Qod',{},[
+['zul.wgt.Label','pL7Qpd',{value:'Pengumuman dan Informasi'},[]]]],
+['zul.grid.Row','pL7Qqd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qrd',{$onClick:true,style:'font-size: 10px;',label:'ALUMNI SHARING SESSION FAKULTAS EKONOMI DAN BISNIS'},[]]]],
+['zul.grid.Row','pL7Qsd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qtd',{$onClick:true,style:'font-size: 10px;',label:'Pengumuman tentang Perkuliahan Semester Gasal TA. 2021/2022'},[]]]],
+['zul.grid.Row','pL7Qud',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qvd',{$onClick:true,style:'font-size: 10px;',label:'PENGUMUMAN JADWAL SIDANG KKP GEL VIII JULI 2021'},[]]]],
+['zul.grid.Row','pL7Qwd',{style:'border:0px;background: transparent;font-size: 10px;'},[
+['zul.wgt.A','pL7Qxd',{$onClick:true,style:'font-size: 10px;',label:'PEMBUKAAN KKN PRODI MANAJEMEN FAKULTAS EKONOMI BISNIS DAN ILMU SOSIAL'},[]]]]]]]]]]]]]]]]]],
+['zul.layout.North','pL7Qs4',{visible:false,border:'none'},[
+['zul.wgt.Html','pL7Qt4',{id:'textBerjalan',visible:false},[]]]]]]]],
+['zul.utl.Style','pL7Q_e',{visible:false,src:'/pb/css/slide.css'},[]],
+['zul.utl.Style','pL7Q0e',{visible:false,src:'/pb/css/fgrid.css'},[]]]]]],
+['zul.tab.Tabpanel','pL7Qi0',{id:'panel_pengumuman',visible:false,style:'border:0px;'},[]],
+['zul.tab.Tabpanel','pL7Qj0',{id:'pengumumanPerkuliahan'},[]],
+['zul.tab.Tabpanel','pL7Qk0',{id:'kegiatanDanPrestasi'},[]],
+['zul.tab.Tabpanel','pL7Ql0',{id:'tampilanDashboardPustaka'},[]],
+['zul.tab.Tabpanel','pL7Qm0',{id:'tampilanDashboard'},[]],
+['zul.tab.Tabpanel','pL7Qn0',{id:'kalender_akademik_mahasiswa'},[]],
+['zul.tab.Tabpanel','pL7Qo0',{id:'infoKegiatan'},[]]]]]]]]]]]]]],
+['zul.layout.South','pL7Qp0',{},[
+['zul.box.Box','pL7Qq0',{width:'100%'},[
+['zul.wgt.Toolbarbutton','pL7Qr0',{id:'menubutton',$onClick:true,style:'position:fixed;bottom:15px;left:20px;',image:'/pb/img/menu.png',hoverImage:'/pb/img/menu_h.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Qs0',{id:'customerService',visible:false,$onClick:true,sclass:'customerService',style:'position:fixed;bottom:15px;right:75px;',image:'/pb/img/whatapp-icon_1.png',hoverImage:'/pb/img/whatapp-2-icon.png'},[]],
+['zul.wgt.Toolbarbutton','pL7Qt0',{id:'back_to_top',$onClick:true,sclass:'back_to_top',style:'position:fixed;bottom:15px;right:20px;',image:'/pb/img/back_to_top.png',hoverImage:'/pb/img/back_to_top_2.png'},[]],
+['zul.box.Box','pL7Qu0',{id:'footerHbox',width:'100%',style:'border-top: 1px dotted;position:fixed;bottom:0px;left:0px;background:url(\'https://ecampus.pelitabangsa.ac.id/pb/img/banner_perguruanTinggi_1.jpg\') no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;',align:'center',pack:'center'},[
+['zul.wgt.Label','pL7Qv0',{id:'copyright',style:'font-family: \'Open Sans\', sans-serif;font-size: 11px;color:black;font-weight: bold;',value:'Copyright © 2022 UNIVERSITAS PELITA BANGSA'},[]]],'horizontal']],'vertical']]]]],
+['zul.utl.Timer','pL7Qw0',{$onTimer:true,repeats:true,delay:60000},[]],
+['zul.utl.Script','pL7Qx0',{},[]],
+['zul.utl.Timer','pL7Q54',{$onTimer:true,delay:50},[]],
+['zul.utl.Timer','pL7Q64',{$onTimer:true,delay:50},[]],
+['zul.utl.Timer','pL7Qzd',{$onTimer:true,delay:50},[]],
+['zul.utl.Timer','pL7Q7e',{$onTimer:true,delay:50},[]]]],
+['zul.wnd.Window','pL7Q74',{$onOK:true,$onClose:true,$onCancel:true,width:'250pt',sclass:'z-messagebox-window',title:'Pertanyaan',closable:true,border:'normal',mode:'highlighted'},[
+['zul.box.Box','pL7Q84',{prolog:'\n\t'},[
+['zul.wgt.Div','pL7Q94',{sclass:'z-msgbox z-msgbox-question'},[]],
+['zul.wgt.Separator','pL7Qa4',{spacing:'13px',orient:'horizontal'},[]],
+['zul.wgt.Div','pL7Qb4',{sclass:'z-messagebox'},[
+['zul.wgt.Label','pL7Qc4',{listeners:{onBind:function(event){
+
+					var node = this.$n(),
+						tr = node.parentNode.parentNode.parentNode,
+						width = node.offsetWidth + tr.cells[0].offsetWidth,
+						win = this.$o(),
+						cave = win.$n('cave'),
+						outer = win.$n();
+					width += zk(cave).padBorderWidth()
+						+ zk((cave = cave.parentNode)).padBorderWidth()
+						+ zk((cave = cave.parentNode)).padBorderWidth()
+						+ zk((cave = cave.parentNode)).padBorderWidth();
+				
+					outer.style.width = jq.px0(Math.min(Math.max(width, 330), jq.innerWidth() - 20));
+					zk(outer).center();
+					var top = zk.parseInt(outer.style.top), y = jq.innerY();
+					if (y) {
+						var y1 = top - y;
+						if (y1 > 100) outer.style.top = jq.px0(top - (y1 - 100));
+					} else if (top > 100)
+						outer.style.top = "100px";
+					win.onSize();
+				
+}},prolog:'\n\t\t\t',multiline:true,value:'Password belum Anda ganti, apakah Anda ingin merubah password sekarang ?'},[]]]]],'horizontal'],
+['zul.wgt.Separator','pL7Qd4',{prolog:'\n\t',spacing:'15px',orient:'horizontal'},[]],
+['zul.box.Box','pL7Qe4',{style:'margin-left:auto; margin-right:auto',prolog:'\n\t'},[
+['zul.wgt.Button','pL7Qf4',{id:'btn1',$onClick:true,sclass:'z-messagebox-btn',label:'OK',autodisable:'self'},[],'trendy'],
+['zul.wgt.Button','pL7Qg4',{id:'btn2',$onClick:true,sclass:'z-messagebox-btn',label:'Cancel',autodisable:'self'},[],'trendy']],'horizontal']]]]],9,
+['cfmClose','["Apakah Anda yakin ingin keluar dari aplikasi ini ?"]',
+'showBusy','["Harap tunggu, sedang menyiapkan data..."]']);
+var isInIFrame = (window.location != window.parent.location && window.name != 'main') ? true : false;if(isInIFrame){parent.location.reload();}
+</script>
+<noscript>
+<div class="noscript"><p>Sorry, JavaScript must be enabled.<br/>Change your browser options, then <a href="">try again</a>.</p></div>
+</noscript>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+CRITICAL - 2022-07-16 04:07:07 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:22:37 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('artikel')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('artikel')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-16 04:23:25 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:26:45 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:26:58 --> Invalid file: artikel/index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/index.p...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/index', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(11): view('artikel/index', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 04:31:57 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('artikel')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('artikel')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-16 04:36:15 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:38:39 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:45:34 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('artikel')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('artikel')
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-07-16 04:50:15 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:15 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:16 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:16 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:16 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:17 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 04:50:20 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('artikel-kedua')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 05:51:42 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 05:52:07 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:00:15 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:01:16 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:01:17 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:01:18 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:01:56 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:03:13 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:03:15 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:03:16 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:03:16 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:03:46 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:09:24 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:09:43 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:03 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:03 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:05 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:05 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:05 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 06:14:06 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:31:18 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('admin')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 11:35:50 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:36:55 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:40:16 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:40:17 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:43:26 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:43:28 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:43:45 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(33): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:47:04 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(18): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 11:47:05 --> Invalid file: artikel/admin_index.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/admin_i...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/admin_i...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(18): view('artikel/admin_i...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->admin_index()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-07-16 12:00:33 --> Class 'App\Controllers\PageNotFoundException' not found
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->view('add')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#2 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-07-16 12:02:00 --> Invalid file: artikel/form_add.php
+#0 C:\xampp\htdocs\lab11_ci\ci4\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('artikel/form_ad...')
+#1 C:\xampp\htdocs\lab11_ci\ci4\system\Common.php(1089): CodeIgniter\View\View->render('artikel/form_ad...', Array, true)
+#2 C:\xampp\htdocs\lab11_ci\ci4\app\Controllers\Artikel.php(52): view('artikel/form_ad...', Array)
+#3 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(832): App\Controllers\Artikel->add()
+#4 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#5 C:\xampp\htdocs\lab11_ci\ci4\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\lab11_ci\ci4\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\lab11_ci\ci4\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
