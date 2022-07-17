@@ -395,6 +395,101 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete().
 ![img1!](/praktikum12/foto25.png)
 
 
+## PRAKTIKUM 13 ##
+
+# Langkah-langkah Praktikum 13
+Persiapan.
+
+Untuk memulai membuat modul Login, yang perlu disiapkan adalah database server
+
+menggunakan MySQL. Pastikan MySQL Server sudah dapat dijalankan melalui XAMPP.
+
+Membuat Tabel: User Login
+
+![img1!](/praktikum13/foto1.png)
+
+# Membuat Model User
+
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada
+direktori app/Models dengan nama UserModel.php
+
+![img1!](/praktikum13/foto2.png)
+
+# Membuat Controller User
+
+Buat Controller baru dengan nama User.php pada direktori app/Controllers.
+Kemudian tambahkan method index() untuk menampilkan daftar user, dan method
+login() untuk proses login.
+
+![img1!](/praktikum13/foto3.png)
+
+
+# Membuat View Login
+
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file
+baru dengan nama login.php
+
+![img1!](/praktikum13/foto4.png)
+
+
+#Membuat Database Seeder
+
+Database seeder digunakan untuk membuat data dummy. Untuk keperluan ujicoba modul
+login, kita perlu memasukkan data user dan password kedaalam database. Untuk itu buat
+database seeder untuk tabel user. Buka CLI, kemudian tulis perintah berikut:
+
+php spark make:seeder UserSeeder
+
+Selanjutnya, buka file UserSeeder.php yang berada di lokasi direktori
+/app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut:
+
+![img1!](/praktikum13/foto5.png)
+
+Selanjutnya buka kembali CLI dan ketik perintah berikut:
+php spark db:seed UserSeeder
+
+# Uji Coba Login
+Selanjutnya buka url http://localhost:8080/user/login seperti berikut:
+
+
+![img1!](/praktikum13/foto6.png)
+
+#Menambahkan Auth Filter
+
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php
+pada direktori app/Filters.
+
+![img1!](/praktikum13/foto7.png)
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
+
+'auth' => App\Filters\Auth::class
+
+![img1!](/praktikum13/foto8.png)
+
+# Percobaan Akses Menu Admin
+
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut
+diakses maka, akan dimuculkan halaman login.
+
+![img1!](/praktikum13/foto9.png)
+
+# Fungsi Logout
+
+Tambahkan method logout pada Controller User seperti berikut:
+
+![img1!](/praktikum13/foto10.png)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
