@@ -528,6 +528,12 @@ Isi data pada form di atas dan lihat hasilnya pada browser
 
 ![img1!](/praktikum14/foto6.png)
 
+refresh pada browser
+
+![img1!](/praktikum14/foto7.png)
+
+![img1!](/praktikum14/foto8.png)
+
 
 
 
