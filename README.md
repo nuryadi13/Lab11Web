@@ -532,7 +532,7 @@ refresh pada browser
 
 ![img1!](/praktikum14/foto7.png)
 
-![img1!](/praktikum14/foto8.png)
+![img1!](/Lab11Web/praktikum14/artikel3.png)
 
 
 
