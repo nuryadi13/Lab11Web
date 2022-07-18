@@ -480,6 +480,59 @@ Tambahkan method logout pada Controller User seperti berikut:
 
 ![img1!](/praktikum13/foto10.png)
 
+# PRAKTIKUM 14 #
+
+# Membuat Pagination
+Pagination merupakan proses yang digunakan untuk membatasi tampilan yang panjang
+dari data yang banyak pada sebuah website. Fungsi pagination adalah memecah
+tampilan menjadi beberapa halaman tergantung banyaknya data yang akan ditampilkan
+pada setiap halaman.
+Pada Codeigniter 4, fungsi pagination sudah tersedia pada Library sehingga cukup
+mudah menggunakannya.
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi
+kode pada method admin_index seperti berikut.
+
+![img1!](/praktikum14/foto1.png)
+
+Selanjutnya buka kembali menu daftar artikel tambahkan data lagi untuk melihat hasilnya
+
+![img1!](/praktikum14/foto2.png)
+
+# Membuat Pencarian
+Pencarian data digunakan untuk memfilter data.
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method
+admin_index ubah kodenya seperti berikut
+
+![img1!](/praktikum14/foto3.png)
+
+# Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller
+Artikel, sesuaikan kode pada method add seperti berikut:
+
+![img1!](/praktikum14/foto4.png)
+
+Kemudian pada file views/artikel/form_add.php tambahkan field input file seperti
+berikut.
+<p>
+<input type="file" name="gambar">
+</p>
+Dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut.
+<form action="" method="post" enctype="multipart/form-data">
+
+Ujicoba file upload dengan mengakses menu tambah artikel.
+
+![img1!](/praktikum14/foto5.png)
+
+Isi data pada form di atas dan lihat hasilnya pada browser
+
+
+![img1!](/praktikum14/foto6.png)
+
+
+
+
+
+
 
 
 
